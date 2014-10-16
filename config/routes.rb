@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'say/hello'
+
+  get 'say/goodbye'
+
   resources :communities
 
   # The priority is based upon order of creation: first created -> highest priority.
