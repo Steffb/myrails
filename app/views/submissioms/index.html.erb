@@ -1,0 +1,27 @@
+<h1>Listing submissioms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @submissioms.each do |submissiom| %>
+      <tr>
+        <td><%= submissiom.title %></td>
+        <td><%= submissiom.url %></td>
+        <td><%= link_to 'Show', submissiom %></td>
+        <td><%= link_to 'Edit', edit_submissiom_path(submissiom) %></td>
+        <td><%= link_to 'Destroy', submissiom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Submissiom', new_submissiom_path %>

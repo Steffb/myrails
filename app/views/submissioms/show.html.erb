@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @submissiom.title %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @submissiom.url %>
+</p>
+
+<%= link_to 'Edit', edit_submissiom_path(@submissiom) %> |
+<%= link_to 'Back', submissioms_path %>
